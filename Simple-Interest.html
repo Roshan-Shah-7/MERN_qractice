@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest</title>
+</head>
+<body>
+    
+
+    <script>
+        // parseInt and parseInt convert string into number.
+        let principle = Number(prompt("Enter the principle")); // 'Number' is also use to convert string into number (both in integer and float)
+        let time = +prompt("Enter the time(in year)"); // '+' is also use to convert string into number
+        let rate = Number(prompt("Enter the rate"));
+
+        let SI = (principle * rate * time ) / 100
+        let amount = SI + principle
+        document.write(`The amount is ${amount} when principle is ${principle}, time is ${time} and rate is ${rate}%`) // this is called template literal.
+    </script>
+</body>
+</html>
